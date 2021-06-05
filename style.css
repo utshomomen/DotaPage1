@@ -1,0 +1,187 @@
+
+/* box sizing :border box  */
+/* * {
+    margin:0;
+    padding:0;
+}
+
+body, ul, h1,h2, a {
+
+    margin:0;
+    padding:0;
+    font-size: sans-serif ;
+
+
+} */
+
+header {
+    
+    background-color:#EB4C69;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index:1;
+    top:0; 
+    left:0;
+    z-index:auto;
+    
+
+}
+header h1 {
+    color: #f4f4f4;
+    border:2px solid white;
+    display: inline-block;
+    border-radius: 26px;
+
+}
+
+
+.banner {
+
+    position: relative;
+    top: 0%;
+    left: 0%;
+   
+
+}
+
+
+.banner img {
+max-width: 100%;
+max-height: 100%;
+top: 0;
+left: 0;
+color: #fff;
+
+}
+.banner .welcome {
+    background-color: #EB4C69;
+    position: absolute;
+    color: #fff;
+    padding :30%;
+    left:0;
+    top: 30px;
+
+}
+
+.banner h2 {
+    font-size: 46px;
+
+}
+
+/* 16px is 1 rem 32 px is 2em */
+ .banner h2 span 
+{
+font-size: 2.3em;
+}
+
+banner h2 span {
+    font-size: 2.em;
+
+}
+
+nav{
+     background-color: #EB4C69;
+     padding:20px ;
+
+    position: sticky;
+    top:48px;
+
+
+
+}
+nav .nav-class ul {
+
+
+    white-space: nowrap;
+
+}
+nav .nav-class li   {
+    
+    width: 40%;
+    display: inline-block;
+    font-size: 30px;
+
+
+
+}
+
+nav .nav-class li a {
+
+    text-decoration:none ;
+    color:#333;
+
+}
+
+nav li a.join {
+
+    color: #ebebeb;
+
+}
+
+main {
+
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+
+article h2 {
+    color: #EB4C69;
+    font-size: 50px;
+
+}
+
+article p {
+    line-height: 2em;
+    color: grey;
+
+}
+
+
+.images {
+    text-align: center ;
+    margin:20px 5%;
+
+}
+
+.image li img {
+
+    max-width: 100%;
+    
+}
+
+.about {
+    background-color: #f4f4f4;
+    text-align: center;
+    text-decoration: #4b4b4b;
+
+}
+
+.abou h2 {
+    font-size: 40px;
+    text-align: center;
+
+
+}
+form input {
+    margin:30px 0;
+    padding:10px 20px;
+    font-size: 26px;
+    border-radius: 28px;
+    border:2px solid #EB4C69
+}
+
+
+footer .copyright  {
+
+    font-size: 10px;
+    text-align: center;
+    background-color: #EB4C69;
+    padding:10px;
+    color: #f4f4f4;
+}
