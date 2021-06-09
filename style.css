@@ -32,15 +32,7 @@ header {
      z-index: -2;
      top: 0;
      left: 0;
-    /* background-color:#EB4C69;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    z-index:1;
-    top:0; 
-    left:0;
-    z-index:auto; */
+  
     
 
 }
@@ -145,7 +137,7 @@ main {
 article h2 {
 
     color:#EB4C69; 
-    font-size: 20px;
+    font-size: 55px;
 
     }
 article p {
@@ -158,7 +150,8 @@ article p {
 
 .images {
         text-align: center;
-        margin: 20px -100px;
+        margin: 100px 80px;
+        
         white-space: nowrap;
         z-index: -2;
         
@@ -170,14 +163,14 @@ article p {
 
         display: inline-block;
         
-        width: 60%;
+        width: 50%;
         
 
         
        }
 
        .images li img {
-        max-width: 80%;
+        max-width: 120%;
      
         }
 
@@ -212,141 +205,124 @@ article p {
             padding:10px;
             color: #4b4b4b;
         } 
-/* .banner img {
-max-width: 100%;
-max-height: 100%;
-top: 0;
-left: 0;
-color: #fff;
-
-}
-.banner .welcome {
-    background-color: #EB4C69;
-    position: absolute;
-    color: #fff;
-    padding :30%;
-    left:0;
-    top: 30px;
-
-}
-
-.banner h2 {
-    font-size: 46px;
-
-}
-
-/* 16px is 1 rem 32 px is 2em */
- /* .banner h2 span 
-{
-font-size: 2.3em; 
-}
-*/
-/* banner h2 span {
-    font-size: 2.em;
-
-}
-
-nav{
-     background-color: #EB4C69;
-     padding:20px ;
-
-    position: sticky;
-    top:48px;
 
 
+        /* pseudo class */
+        nav ul li a:hover {
 
-}
-nav .nav-class ul {
+                text-decoration: underline;
+                color: #fff;
+            
 
-
-    white-space: nowrap;
-
-}
-nav .nav-class li   {
-    
-    width: 40%;
-    display: inline-block;
-    font-size: 30px;
+        }
 
 
+        .images li:hover {
+            position: relative;
+            top: -4px;
 
-}
+        }
 
-nav .nav-class li a {
+        form input:focus {
 
-    text-decoration:none ;
-    color:#333;
+            border: 4px dashed #4b4b4b;
+            outline: none;
+        }
 
-}
+        form input:valid{
+            border: 4px solid #333;
+        }
 
-nav li a.join {
+        /* nav li:hover {
+            text-decoration-color: #f4f4f4;
+           text-decoration: underline;
+        } */
+        
 
-    color: #ebebeb;
+        article p::first-line {
+            font-size: 20px;
+            font-weight: bold;
+        }
+       
 
-}
+        p::selection {
+            background-color: #EB4C69;
+            color:#fff;
+        }
 
-main {
+        p::after {
+            content:'...';
+        }
 
-    max-width: 100%;
-    width: 1200px;
-    margin: 80px auto;
-    padding: 0 40px;
-    box-sizing: border-box;
+        @media screen and (max-width: 1400px) {
+            
+            .banner .welcome  h2 {
+                font-size: 60px;
+                
+            }
 
-}
+            nav li {
+                font-size: 18px;
+            }
 
-article h2 {
-    color: #EB4C69;
-    font-size: 50px;
+        }
 
-}
+        @media screen and (max-width: 960px) {
+            
+            .banner .welcome  h2 {
+                font-size: 40px;
+                
+            }
 
-article p {
-    line-height: 2em;
-    color: grey;
+           
+        }
 
-}
+        @media screen and (max-width: 700px) {
+            
+            .banner .welcome   {
+                position:relative ;
+                text-align:center;
+                color: #f4f4f4;
+                padding: 10px;
+                
+            }
+            .banner .welcome  br {
+                display: none;
+             }
+            .banner .welcome  h2{
+                font-size: 25px;
+            }
+            
 
+            .banner .welcome span {
+                font-size:1em;
 
-.images {
-    text-align: center ;
-    margin:20px 5%;
+            }
 
-}
-
-.image li img {
-
-    max-width: 100%;
-    
-}
-
-.about {
-    background-color: #f4f4f4;
-    text-align: center;
-    text-decoration: #4b4b4b;
-
-}
-
-.abou h2 {
-    font-size: 40px;
-    text-align: center;
-
-
-}
-form input {
-    margin:30px 0;
-    padding:10px 20px;
-    font-size: 26px;
-    border-radius: 28px;
-    border:2px solid #EB4C69
-}
+            .images li {
+                width: 100%;
+                margin: 20px auto;
+                display: block;
+            }
 
 
-footer .copyright  {
+           
+        }
 
-    font-size: 10px;
-    text-align: center;
-    background-color: #EB4C69;
-    padding:10px;
-    color: #f4f4f4;
-} */
+        @media screen and (max-width: 560px) {
+
+            nav li {
+                font-size: 20px;
+                display: block;
+                width: 100%;
+                margin: 12px 0;
+            }
+
+            header {
+                position: relative;
+            }
+
+            nav {
+                top: 0;
+            }
+        }
